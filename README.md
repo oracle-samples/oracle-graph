@@ -9,7 +9,7 @@ Graphs enable you to find connections and explore relationships in your data. Or
 - [ADB Client for Jupyter](./adb-client-jupyter/adb-client-on-jupyter-notebook.ipynb)
 - [Oracle Graph Studio Conda Interpreter](./graph-studio-conda-interpreter)
 - [Oracle Graph Visualization Demo Application](./graphviz-demo/README.md)
-- [PGQL on RDBMS Samples](./bank-graph-rdbms-samples/README.md)
+- [PGQL on RDBMS Samples](./pgql-graph-demos/bank-graph-rdbms-samples/README.md)
 
 ## Contributing
 

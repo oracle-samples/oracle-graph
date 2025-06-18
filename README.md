@@ -1,12 +1,15 @@
-# PGX Samples
+# Oracle Graph
 
-PGX (Parallel Graph AnalytiX) is a graph toolkit that provides a graph query language, optimized analytics algorithms, and machine learning support to extract insights hidden in the connections across datasets at high-performance and extreme scale.
+Graphs enable you to find connections and explore relationships in your data. Oracle Graph is an AI-ready, integrated feature of Oracle's converged database that eliminates the need for a separate graph database and data movement. Analysts and developers can address various use cases, including financial fraud detection and manufacturing traceability, while gaining enterprise-grade security, ease of data ingestion, and strong support for operational workloads.
 
-While graphs have become ubiquitous nowadays as the backbone of multiple applications - from search engines and recommender systems to intelligent chatbots, PGX enables fast graph analysis on such industry-scale graphs (with trillions of edges) to reveal latent information between linked entities.
-
-## Table of contents:
+## Table of contents
 
 - [Built-in Algorithms](./built-in-algorithms/README.md)
+- [23ai Graph Demos](./23c-graph-demos)
+- [ADB Client for Jupyter](./adb-client-jupyter/adb-client-on-jupyter-notebook.ipynb)
+- [Oracle Graph Studio Conda Interpreter](./graph-studio-conda-interpreter)
+- [Oracle Graph Visualization Demo Application](./graphviz-demo/README.md)
+- [PGQL on RDBMS Samples](./pgql-graph-demos/bank-graph-rdbms-samples/README.md)
 
 ## Contributing
 
@@ -18,7 +21,7 @@ Please consult the [security guide](./SECURITY.md) for our responsible security 
 
 ## License
 
-Copyright (c) 2019, 2024 Oracle and/or its affiliates.
+Copyright (c) 2019, 2025 Oracle and/or its affiliates.
 
 Released under the Universal Permissive License v1.0 as shown at
 <https://oss.oracle.com/licenses/upl/>.

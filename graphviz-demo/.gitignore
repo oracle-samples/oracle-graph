@@ -1,6 +1,11 @@
 src/main/resources/public/alta.css
+src/main/resources/public/bundle.css
 src/main/resources/public/index.d.ts
 src/main/resources/public/index.js
+src/main/resources/public/gvt_sqlgraph_to_json.sql
+src/main/resources/public/*.ttf
+src/main/resources/public/*.woff
+src/main/resources/public/*.woff2
 Thumbs.db
 .DS_Store
 .gradle

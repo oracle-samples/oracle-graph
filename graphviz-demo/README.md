@@ -13,7 +13,7 @@ The key source files to look at are
 
 ## Pre-requisites
 
-1. Oracle JDK 11 (or OpenJDK 11)
+1. Oracle JDK 17 (or OpenJDK 17)
 2. A running Oracle Database, version 23.4 or newer (e.g. [Autonomous Database](https://www.oracle.com/autonomous-database/))
 3. Import the Human Resources dataset and create a Property Graph by running `./gradlew createHrDatasetAndPropertyGraph -Pjdbc_url=<jdbc_url> -Pusername=<username> -Ppassword=<password>`
 
@@ -27,7 +27,7 @@ The key source files to look at are
 3. Unzip the library into the `src/main/resources/public` directory. For example:
 
 ```
-unzip oracle-graph-visualization-library-24.2.0.zip -d src/main/resources/public/
+unzip oracle-graph-visualization-library-25.3.0.zip -d src/main/resources/public/
 ```
 
 4. Run the following command to start the example app locally:

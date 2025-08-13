@@ -13,7 +13,67 @@
 <script type="module">
 import * as ogvt from '/index.js';
 
-const styles = {
+const ruleBasedStyles = [
+  {
+    "legendTitle": 'Label - EMPLOYEES',
+    "stylingEnabled": true,
+    "component": 'vertex',
+    "target": 'vertex',
+    "conditions": {
+      "operator": 'and',
+      "conditions": [
+        {
+          "property": 'labels',
+          "operator": '=',
+          "value": 'EMPLOYEES'
+        }
+      ]
+    },
+    "style": {
+      "label": {
+        "text": '${properties.EMAIL}',
+      }
+    }
+  },
+  {
+    "legendTitle": 'Label - DEPARTMENTS',
+    "stylingEnabled": true,
+    "component": 'vertex',
+    "target": 'vertex',
+    "conditions": {
+      "operator": 'and',
+      "conditions": [
+        {
+          "property": 'labels',
+          "operator": '=',
+          "value": 'DEPARTMENTS'
+        }
+      ]
+    },
+    "style": {
+      "label": {
+        "text": '${properties.DEPARTMENT_NAME}',
+      }
+    }
+  },
+  {
+    "legendTitle": 'Edge Label',
+    "stylingEnabled": true,
+    "component": 'edge',
+    "target": 'edge',
+    "conditions": {
+      "operator": 'and',
+      "conditions": []
+    },
+    "style": {
+      "label": {
+        "text": 'Managed By',
+      }
+    }
+  }
+];
+
+const basedStyles = {
   edge: {
     color: 'lightgray'
   },
@@ -41,10 +101,9 @@ const expand = async (ids) => {
 const visualization = new GraphVisualization({
   target: document.getElementById('graphviz'),
   props: {
-    data: { vertices: {}, edges: {} },
-    styles,
+    data: {vertices: [], edges: [], numResults: 0},
     expand,
-    settings: { layout: 'hierarchical' },
+    settings: { layout: 'hierarchical', ruleBasedStyles },
     featureFlags: {
       exploration: {
         expand: true,
@@ -60,15 +119,14 @@ const visualization = new GraphVisualization({
         interaction: true,
         fitToScreen: true,
         sticky: true
-      },
-      pagination: false
+      }
     }
   }
 });
 
 Array.from(document.getElementsByClassName('layout-btn')).forEach((btn) => {
   btn.onclick = () => {
-    visualization.settings = { layout: btn.id };
+    visualization.settings = { layout: btn.id, ruleBasedStyles };
   };
 });
 

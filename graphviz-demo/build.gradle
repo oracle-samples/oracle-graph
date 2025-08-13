@@ -1,72 +1,88 @@
 plugins {
-    id("com.github.johnrengelman.shadow") version "7.1.2"
-    id("io.micronaut.application") version "3.6.3"
+    id("io.micronaut.application") version "4.5.4"
+    id("com.gradleup.shadow") version "8.3.7"
+    id("io.micronaut.aot") version "4.5.4"
 }
 
 version = "0.1"
 group = "com.oracle.example"
 
 ext {
-    jdbc_url = project.findProperty('jdbc_url')
-    username = project.findProperty('username')
-    password = project.findProperty('password')
+  jdbc_url = project.findProperty('jdbc_url')
+  username = project.findProperty('username')
+  password = project.findProperty('password')
 }
 
 repositories {
-    mavenCentral()
-    maven { url "https://artifacts.metaborg.org/content/repositories/releases" }
-    maven { url "https://artifacts.metaborg.org/content/repositories/usethesource/" }
+  mavenCentral {
+    metadataSources {
+      mavenPom()
+      ignoreGradleMetadataRedirection()
+    }
+  }
+  maven { url "https://artifacts.metaborg.org/content/repositories/releases" }
+  maven { url "https://artifacts.metaborg.org/content/repositories/usethesource/" }
 }
 
 dependencies {
-    annotationProcessor("io.micronaut:micronaut-http-validation")
-    implementation("io.micronaut:micronaut-http-client")
-    implementation("io.micronaut:micronaut-jackson-databind")
-    implementation("jakarta.annotation:jakarta.annotation-api")
-    runtimeOnly("ch.qos.logback:logback-classic")
-    compileOnly("org.graalvm.nativeimage:svm")
+  annotationProcessor("io.micronaut:micronaut-http-validation")
+  annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+  implementation("io.micronaut.serde:micronaut-serde-jackson")
+  compileOnly("io.micronaut:micronaut-http-client")
+  runtimeOnly("ch.qos.logback:logback-classic")
+  runtimeOnly("org.yaml:snakeyaml")
+  runtimeOnly("org.fusesource.jansi:jansi:2.4.1")
+  testImplementation("io.micronaut:micronaut-http-client")
 
-    implementation("io.micronaut:micronaut-validation")
-    implementation("com.oracle.database.graph:opg-client:23.1.0")
-    implementation("commons-io:commons-io:2.11.0")
+  implementation("com.oracle.database.graph:opg-client:25.2.0")
+  implementation("commons-io:commons-io:2.11.0")
 }
 
 application {
-    mainClass.set("com.oracle.example.Application")
+  mainClass.set("com.oracle.example.Application")
 }
 java {
-    sourceCompatibility = JavaVersion.toVersion("11")
-    targetCompatibility = JavaVersion.toVersion("11")
+  sourceCompatibility = JavaVersion.toVersion("17")
+  targetCompatibility = JavaVersion.toVersion("17")
 }
 
 graalvmNative.toolchainDetection = false
+
 micronaut {
-    runtime("netty")
-    testRuntime("junit5")
-    processing {
-        incremental(true)
-        annotations("com.oracle.example.*")
-    }
+  runtime("netty")
+  testRuntime("junit5")
+  processing {
+    incremental(true)
+    annotations("com.oracle.example.*")
+  }
+  aot {
+    optimizeServiceLoading = false
+    convertYamlToJava = false
+    precomputeOperations = true
+    cacheEnvironment = true
+    optimizeClassLoading = true
+    deduceEnvironment = true
+    optimizeNetty = true
+    replaceLogbackXml = true
+  }
 }
 
 task createHrDataSetAndPropertyGraph(type: JavaExec) {
-    outputs.upToDateWhen { false }
-
-    environment("JDBC_URL", jdbc_url)
-    environment("USERNAME", username)
-    environment("PASSWORD", password)
-    mainClass.set("com.oracle.scripts.RunCreateScripts")
-    classpath = sourceSets.main.runtimeClasspath
+  outputs.upToDateWhen { false }
+  environment("JDBC_URL", jdbc_url)
+  environment("USERNAME", username)
+  environment("PASSWORD", password)
+  mainClass.set("com.oracle.scripts.RunCreateScripts")
+  classpath = sourceSets.main.runtimeClasspath
 }
 
 task dropHrDataSetAndPropertyGraph(type: JavaExec) {
-    outputs.upToDateWhen { false }
-
-    environment("JDBC_URL", jdbc_url)
-    environment("USERNAME", username)
-    environment("PASSWORD", password)
-    mainClass.set("com.oracle.scripts.RunDropScripts")
-    classpath = sourceSets.main.runtimeClasspath
+  outputs.upToDateWhen { false }
+  environment("JDBC_URL", jdbc_url)
+  environment("USERNAME", username)
+  environment("PASSWORD", password)
+  mainClass.set("com.oracle.scripts.RunDropScripts")
+  classpath = sourceSets.main.runtimeClasspath
 }
 
 

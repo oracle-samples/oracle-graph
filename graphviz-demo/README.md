@@ -1,20 +1,19 @@
 # Oracle Graph Visualization Demo Application 
 
 An example Java web application based on [Micronaut](https://docs.micronaut.io/) which embeds Oracle's Graph
-Visualization library. The server queries the graph data from an Oracle Database using 
-SQL.
+Visualization library. The server queries the graph data from an Oracle Database using SQL.
 
 The key source files to look at are
 
 * `src/main/resources/public/index.html`: the HTML file served in the browser embedding the visualization library
-* `src/main/java/com/oracle/example/HRController.java`: implements the REST endpoints called by `index.html` 
+* `src/main/java/com/oracle/example/HRController.java`: implements the REST endpoints called by `index.html`
 * `src/main/java/com/oracle/example/GraphClient.java`: wraps the graph server APIs, called by HRController
 
 
 ## Pre-requisites
 
 1. Oracle JDK 17 (or OpenJDK 17)
-2. A running Oracle Database, version 23.4 or newer (e.g. [Autonomous Database](https://www.oracle.com/autonomous-database/))
+2. A running Oracle AI Database 26ai or newer (e.g. [Oracle Autonomous AI Database](https://www.oracle.com/autonomous-database/))
 3. Import the Human Resources dataset and create a Property Graph by running `./gradlew createHrDatasetAndPropertyGraph -Pjdbc_url=<jdbc_url> -Pusername=<username> -Ppassword=<password>`
 
 * Note: The user must have `GRANT CREATE SESSION, CREATE TABLE, CREATE VIEW, CREATE SEQUENCE grants on the Database`
@@ -27,7 +26,7 @@ The key source files to look at are
 3. Unzip the library into the `src/main/resources/public` directory. For example:
 
 ```
-unzip oracle-graph-visualization-library-25.3.0.zip -d src/main/resources/public/
+unzip oracle-graph-visualization-library-25.4.0.zip -d src/main/resources/public/
 ```
 
 4. Run the following command to start the example app locally:

@@ -1,0 +1,902 @@
+{
+    "vertices": [
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"AR\"}",
+            "properties": {
+                "COUNTRY_ID": "AR",
+                "COUNTRY_NAME": "Argentina",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"AU\"}",
+            "properties": {
+                "COUNTRY_ID": "AU",
+                "COUNTRY_NAME": "Australia",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"BE\"}",
+            "properties": {
+                "COUNTRY_ID": "BE",
+                "COUNTRY_NAME": "Belgium",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"BR\"}",
+            "properties": {
+                "COUNTRY_ID": "BR",
+                "COUNTRY_NAME": "Brazil",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"CA\"}",
+            "properties": {
+                "COUNTRY_ID": "CA",
+                "COUNTRY_NAME": "Canada",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"CH\"}",
+            "properties": {
+                "COUNTRY_ID": "CH",
+                "COUNTRY_NAME": "Switzerland",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"CN\"}",
+            "properties": {
+                "COUNTRY_ID": "CN",
+                "COUNTRY_NAME": "China",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"DE\"}",
+            "properties": {
+                "COUNTRY_ID": "DE",
+                "COUNTRY_NAME": "Germany",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"DK\"}",
+            "properties": {
+                "COUNTRY_ID": "DK",
+                "COUNTRY_NAME": "Denmark",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"EG\"}",
+            "properties": {
+                "COUNTRY_ID": "EG",
+                "COUNTRY_NAME": "Egypt",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "REGION_ID": 1,
+                "REGION_NAME": "Europe"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":2}",
+            "properties": {
+                "REGION_ID": 2,
+                "REGION_NAME": "Americas"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":3}",
+            "properties": {
+                "REGION_ID": 3,
+                "REGION_NAME": "Asia"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":4}",
+            "properties": {
+                "REGION_ID": 4,
+                "REGION_NAME": "Middle East and Africa"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"FR\"}",
+            "properties": {
+                "COUNTRY_ID": "FR",
+                "COUNTRY_NAME": "France",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"IL\"}",
+            "properties": {
+                "COUNTRY_ID": "IL",
+                "COUNTRY_NAME": "Israel",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"IN\"}",
+            "properties": {
+                "COUNTRY_ID": "IN",
+                "COUNTRY_NAME": "India",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"IT\"}",
+            "properties": {
+                "COUNTRY_ID": "IT",
+                "COUNTRY_NAME": "Italy",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"JP\"}",
+            "properties": {
+                "COUNTRY_ID": "JP",
+                "COUNTRY_NAME": "Japan",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"KW\"}",
+            "properties": {
+                "COUNTRY_ID": "KW",
+                "COUNTRY_NAME": "Kuwait",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"ML\"}",
+            "properties": {
+                "COUNTRY_ID": "ML",
+                "COUNTRY_NAME": "Malaysia",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"MX\"}",
+            "properties": {
+                "COUNTRY_ID": "MX",
+                "COUNTRY_NAME": "Mexico",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"NG\"}",
+            "properties": {
+                "COUNTRY_ID": "NG",
+                "COUNTRY_NAME": "Nigeria",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"NL\"}",
+            "properties": {
+                "COUNTRY_ID": "NL",
+                "COUNTRY_NAME": "Netherlands",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "REGION_ID": 1,
+                "REGION_NAME": "Europe"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":2}",
+            "properties": {
+                "REGION_ID": 2,
+                "REGION_NAME": "Americas"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":3}",
+            "properties": {
+                "REGION_ID": 3,
+                "REGION_NAME": "Asia"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":4}",
+            "properties": {
+                "REGION_ID": 4,
+                "REGION_NAME": "Middle East and Africa"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"IT\"}",
+            "properties": {
+                "COUNTRY_ID": "IT",
+                "COUNTRY_NAME": "Italy",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"JP\"}",
+            "properties": {
+                "COUNTRY_ID": "JP",
+                "COUNTRY_NAME": "Japan",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"SG\"}",
+            "properties": {
+                "COUNTRY_ID": "SG",
+                "COUNTRY_NAME": "Singapore",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"UK\"}",
+            "properties": {
+                "COUNTRY_ID": "UK",
+                "COUNTRY_NAME": "United Kingdom",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"US\"}",
+            "properties": {
+                "COUNTRY_ID": "US",
+                "COUNTRY_NAME": "United States of America",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"ZM\"}",
+            "properties": {
+                "COUNTRY_ID": "ZM",
+                "COUNTRY_NAME": "Zambia",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "COUNTRIES{\"COUNTRY_ID\":\"ZW\"}",
+            "properties": {
+                "COUNTRY_ID": "ZW",
+                "COUNTRY_NAME": "Zimbabwe",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY"
+            ]
+        },
+        {
+            "id": "LOCATIONS{\"LOCATION_ID\":1000}",
+            "properties": {
+                "CITY": "Roma",
+                "COUNTRY_ID": "IT",
+                "LOCATION_ID": 1000,
+                "POSTAL_CODE": "00989",
+                "STATE_PROVINCE": null,
+                "STREET_ADDRESS": "1297 Via Cola di Rie"
+            },
+            "labels": [
+                "LOCATION"
+            ]
+        },
+        {
+            "id": "LOCATIONS{\"LOCATION_ID\":1100}",
+            "properties": {
+                "CITY": "Venice",
+                "COUNTRY_ID": "IT",
+                "LOCATION_ID": 1100,
+                "POSTAL_CODE": "10934",
+                "STATE_PROVINCE": null,
+                "STREET_ADDRESS": "93091 Calle della Testa"
+            },
+            "labels": [
+                "LOCATION"
+            ]
+        },
+        {
+            "id": "LOCATIONS{\"LOCATION_ID\":1200}",
+            "properties": {
+                "CITY": "Tokyo",
+                "COUNTRY_ID": "JP",
+                "LOCATION_ID": 1200,
+                "POSTAL_CODE": "1689",
+                "STATE_PROVINCE": "Tokyo Prefecture",
+                "STREET_ADDRESS": "2017 Shinjuku-ku"
+            },
+            "labels": [
+                "LOCATION"
+            ]
+        },
+        {
+            "id": "LOCATIONS{\"LOCATION_ID\":1300}",
+            "properties": {
+                "CITY": "Hiroshima",
+                "COUNTRY_ID": "JP",
+                "LOCATION_ID": 1300,
+                "POSTAL_CODE": "6823",
+                "STATE_PROVINCE": null,
+                "STREET_ADDRESS": "9450 Kamiya-cho"
+            },
+            "labels": [
+                "LOCATION"
+            ]
+        },
+        {
+            "id": "LOCATIONS{\"LOCATION_ID\":1400}",
+            "properties": {
+                "CITY": "Southlake",
+                "COUNTRY_ID": "US",
+                "LOCATION_ID": 1400,
+                "POSTAL_CODE": "26192",
+                "STATE_PROVINCE": "Texas",
+                "STREET_ADDRESS": "2014 Jabberwocky Rd"
+            },
+            "labels": [
+                "LOCATION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "REGION_ID": 1,
+                "REGION_NAME": "Europe"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":2}",
+            "properties": {
+                "REGION_ID": 2,
+                "REGION_NAME": "Americas"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":3}",
+            "properties": {
+                "REGION_ID": 3,
+                "REGION_NAME": "Asia"
+            },
+            "labels": [
+                "REGION"
+            ]
+        },
+        {
+            "id": "REGIONS{\"REGION_ID\":4}",
+            "properties": {
+                "REGION_ID": 4,
+                "REGION_NAME": "Middle East and Africa"
+            },
+            "labels": [
+                "REGION"
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"AR\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"AR\"}",
+            "target": "REGIONS{\"REGION_ID\":2}",
+            "properties": {
+                "COUNTRY_ID": "AR",
+                "COUNTRY_NAME": "Argentina",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"AU\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"AU\"}",
+            "target": "REGIONS{\"REGION_ID\":3}",
+            "properties": {
+                "COUNTRY_ID": "AU",
+                "COUNTRY_NAME": "Australia",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"BE\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"BE\"}",
+            "target": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "COUNTRY_ID": "BE",
+                "COUNTRY_NAME": "Belgium",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"BR\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"BR\"}",
+            "target": "REGIONS{\"REGION_ID\":2}",
+            "properties": {
+                "COUNTRY_ID": "BR",
+                "COUNTRY_NAME": "Brazil",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"CA\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"CA\"}",
+            "target": "REGIONS{\"REGION_ID\":2}",
+            "properties": {
+                "COUNTRY_ID": "CA",
+                "COUNTRY_NAME": "Canada",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"CH\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"CH\"}",
+            "target": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "COUNTRY_ID": "CH",
+                "COUNTRY_NAME": "Switzerland",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"CN\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"CN\"}",
+            "target": "REGIONS{\"REGION_ID\":3}",
+            "properties": {
+                "COUNTRY_ID": "CN",
+                "COUNTRY_NAME": "China",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"DE\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"DE\"}",
+            "target": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "COUNTRY_ID": "DE",
+                "COUNTRY_NAME": "Germany",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"DK\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"DK\"}",
+            "target": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "COUNTRY_ID": "DK",
+                "COUNTRY_NAME": "Denmark",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"EG\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"EG\"}",
+            "target": "REGIONS{\"REGION_ID\":4}",
+            "properties": {
+                "COUNTRY_ID": "EG",
+                "COUNTRY_NAME": "Egypt",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"FR\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"FR\"}",
+            "target": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "COUNTRY_ID": "FR",
+                "COUNTRY_NAME": "France",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"IL\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"IL\"}",
+            "target": "REGIONS{\"REGION_ID\":4}",
+            "properties": {
+                "COUNTRY_ID": "IL",
+                "COUNTRY_NAME": "Israel",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"IN\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"IN\"}",
+            "target": "REGIONS{\"REGION_ID\":3}",
+            "properties": {
+                "COUNTRY_ID": "IN",
+                "COUNTRY_NAME": "India",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"IT\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"IT\"}",
+            "target": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "COUNTRY_ID": "IT",
+                "COUNTRY_NAME": "Italy",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"JP\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"JP\"}",
+            "target": "REGIONS{\"REGION_ID\":3}",
+            "properties": {
+                "COUNTRY_ID": "JP",
+                "COUNTRY_NAME": "Japan",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"KW\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"KW\"}",
+            "target": "REGIONS{\"REGION_ID\":4}",
+            "properties": {
+                "COUNTRY_ID": "KW",
+                "COUNTRY_NAME": "Kuwait",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"ML\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"ML\"}",
+            "target": "REGIONS{\"REGION_ID\":3}",
+            "properties": {
+                "COUNTRY_ID": "ML",
+                "COUNTRY_NAME": "Malaysia",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"MX\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"MX\"}",
+            "target": "REGIONS{\"REGION_ID\":2}",
+            "properties": {
+                "COUNTRY_ID": "MX",
+                "COUNTRY_NAME": "Mexico",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"NG\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"NG\"}",
+            "target": "REGIONS{\"REGION_ID\":4}",
+            "properties": {
+                "COUNTRY_ID": "NG",
+                "COUNTRY_NAME": "Nigeria",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"NL\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"NL\"}",
+            "target": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "COUNTRY_ID": "NL",
+                "COUNTRY_NAME": "Netherlands",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"SG\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"SG\"}",
+            "target": "REGIONS{\"REGION_ID\":3}",
+            "properties": {
+                "COUNTRY_ID": "SG",
+                "COUNTRY_NAME": "Singapore",
+                "REGION_ID": 3
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"UK\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"UK\"}",
+            "target": "REGIONS{\"REGION_ID\":1}",
+            "properties": {
+                "COUNTRY_ID": "UK",
+                "COUNTRY_NAME": "United Kingdom",
+                "REGION_ID": 1
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"US\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"US\"}",
+            "target": "REGIONS{\"REGION_ID\":2}",
+            "properties": {
+                "COUNTRY_ID": "US",
+                "COUNTRY_NAME": "United States of America",
+                "REGION_ID": 2
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"ZM\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"ZM\"}",
+            "target": "REGIONS{\"REGION_ID\":4}",
+            "properties": {
+                "COUNTRY_ID": "ZM",
+                "COUNTRY_NAME": "Zambia",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "COUNTRY_LOCATED_IN{\"COUNTRY_ID\":\"ZW\"}",
+            "source": "COUNTRIES{\"COUNTRY_ID\":\"ZW\"}",
+            "target": "REGIONS{\"REGION_ID\":4}",
+            "properties": {
+                "COUNTRY_ID": "ZW",
+                "COUNTRY_NAME": "Zimbabwe",
+                "REGION_ID": 4
+            },
+            "labels": [
+                "COUNTRY_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "LOCATION_LOCATED_IN{\"LOCATION_ID\":1000}",
+            "source": "LOCATIONS{\"LOCATION_ID\":1000}",
+            "target": "COUNTRIES{\"COUNTRY_ID\":\"IT\"}",
+            "properties": {
+                "CITY": "Roma",
+                "COUNTRY_ID": "IT",
+                "LOCATION_ID": 1000,
+                "POSTAL_CODE": "00989",
+                "STATE_PROVINCE": null,
+                "STREET_ADDRESS": "1297 Via Cola di Rie"
+            },
+            "labels": [
+                "LOCATION_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "LOCATION_LOCATED_IN{\"LOCATION_ID\":1100}",
+            "source": "LOCATIONS{\"LOCATION_ID\":1100}",
+            "target": "COUNTRIES{\"COUNTRY_ID\":\"IT\"}",
+            "properties": {
+                "CITY": "Venice",
+                "COUNTRY_ID": "IT",
+                "LOCATION_ID": 1100,
+                "POSTAL_CODE": "10934",
+                "STATE_PROVINCE": null,
+                "STREET_ADDRESS": "93091 Calle della Testa"
+            },
+            "labels": [
+                "LOCATION_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "LOCATION_LOCATED_IN{\"LOCATION_ID\":1200}",
+            "source": "LOCATIONS{\"LOCATION_ID\":1200}",
+            "target": "COUNTRIES{\"COUNTRY_ID\":\"JP\"}",
+            "properties": {
+                "CITY": "Tokyo",
+                "COUNTRY_ID": "JP",
+                "LOCATION_ID": 1200,
+                "POSTAL_CODE": "1689",
+                "STATE_PROVINCE": "Tokyo Prefecture",
+                "STREET_ADDRESS": "2017 Shinjuku-ku"
+            },
+            "labels": [
+                "LOCATION_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "LOCATION_LOCATED_IN{\"LOCATION_ID\":1300}",
+            "source": "LOCATIONS{\"LOCATION_ID\":1300}",
+            "target": "COUNTRIES{\"COUNTRY_ID\":\"JP\"}",
+            "properties": {
+                "CITY": "Hiroshima",
+                "COUNTRY_ID": "JP",
+                "LOCATION_ID": 1300,
+                "POSTAL_CODE": "6823",
+                "STATE_PROVINCE": null,
+                "STREET_ADDRESS": "9450 Kamiya-cho"
+            },
+            "labels": [
+                "LOCATION_LOCATED_IN"
+            ]
+        },
+        {
+            "id": "LOCATION_LOCATED_IN{\"LOCATION_ID\":1400}",
+            "source": "LOCATIONS{\"LOCATION_ID\":1400}",
+            "target": "COUNTRIES{\"COUNTRY_ID\":\"US\"}",
+            "properties": {
+                "CITY": "Southlake",
+                "COUNTRY_ID": "US",
+                "LOCATION_ID": 1400,
+                "POSTAL_CODE": "26192",
+                "STATE_PROVINCE": "Texas",
+                "STREET_ADDRESS": "2014 Jabberwocky Rd"
+            },
+            "labels": [
+                "LOCATION_LOCATED_IN"
+            ]
+        }
+    ],
+    "numResults": 30,
+    "graphOwner": "SCOTT",
+    "graphName": "HR_GRAPH",
+    "isLastResultSet": true
+}

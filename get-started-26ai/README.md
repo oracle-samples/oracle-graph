@@ -1,35 +1,57 @@
-# Get started with Graphs in Oracle AI Database 26ai
+# Get Started with Oracle Graph — 26ai
 
-## Property Graph
+This guide walks you through your first Oracle Graph experience on Oracle AI Database 26ai (or Autonomous AI Database 26ai). You will create a property graph from relational data, run pattern-matching queries, apply graph algorithms, and visualize the results — all without leaving the database.
 
-All you need to get started is an Oracle AI Database.  This can be a developer instance (such as any of the Database Free options) or an enterprise instance.  You can create graphs from any kind of data stored in Oracle AI Database tables.
+✅  These samples use Oracle AI Database 26ai or Autonomous AI Database 26ai. For Oracle Database 19c, see the get-started-19c/ folder.
 
-Property graphs are very helpful in following the flow of “things” in your data: The flow of money among a set of bank accounts, the flow of goods in a supply chain, the flow of variables in software.  They are also very helpful in representing hierarchy in data so that you can capture dependencies, such as which components a particular product depends on.
+## What you'll build
 
-In this example we provide two files to represent a BANK GRAPH dataset, BANK_ACCOUNTS.csv and BANK_TRANSFERS.csv.  This script shows you how you can create the tables for this data.  You can run the SQL statements in your script from your favorite SQL tool.  After creating the tables load data using your favorite data load tool.
+A bank transaction graph (the 'Bank Graph') — a classic fraud detection dataset where accounts are nodes and transfers are edges. By the end you'll be able to:
 
-Once the data is loaded the script sets the primary key and foreign key constraints in the two tables.
+- Find circular payment patterns in a single SQL/PGQL query
+- Rank accounts by influence using PageRank
+- Detect communities of connected accounts
+- Visualize the graph in Graph Studio or the graphviz-demo app
 
-Then you are ready to create a graph (as in the script) and run some graph queries!
+## Prerequisites
 
-Graphs enable you to find connections and explore relationships in your data. Oracle Graph is an AI-ready, integrated feature of Oracle's converged database that eliminates the need for a separate graph database and data movement. Analysts and developers can address various use cases, including financial fraud detection and manufacturing traceability, while gaining enterprise-grade security, ease of data ingestion, and strong support for operational workloads.
+- Oracle AI Database 26ai or Oracle AI Autonomous Database 26ai
+- Python 3.9+ (for notebook path)
+- A browser (for Graph Studio path — no Python needed)
 
-## Graph Algorithms
+### Option A — Graph Studio (Recommended for ADB users)
 
-Oracle Graph feature includes a specialized graph server (PGX) that can run graph algorithms in parallel at high speed.  A wide range of [algorithms](./built-in-algorithms/README.md) are available through Java and Python APIs.
+Graph Studio is a browser-based IDE built into Autonomous AI Database. No local install required.
 
-## RDF Graph
+- Log in to your ADB instance and open Graph Studio from the Tools tab
+- Click Notebooks → Import → upload bank-graph-26ai.dsnb from this folder
+- Run the notebook cells top-to-bottom
 
-RDF graphs are governed by standards from the W3C.  They are useful to have a formal way of representing knowledge in a domain, for automatically inferring new facts from existing facts, and managing rules about data in the data itself, rather than in application code.  Popular serialized representation of RDF graph is the “triple” format, where each relationship in the graph is represented as \<subject\> \<predicate\> \<object\>.  For example, the fact that John is a graduate student can be represented as
+### Option B — Python + Jupyter (Local)
 
-    <http://example.oracle.com/data#John>
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
-    <http://example.oracle.com/onto#GradStudent>
+```python
+pip install oracle-graph-client jupyterlab
+cp .env.example .env        # fill in your DB connection details
+jupyter lab bank-graph-26ai.ipynb
+```
 
-And a fact about the data that all graduate students are students can be represented as
+### Option C — SQL Developer / SQL*Plus
 
-    <http://example.oracle.com/onto#GradStudent>
-    <http://www.w3.org/2000/01/rdf-schema#subClassOf>
-    <http://example.oracle.com/onto#Student>
+SQL scripts are provided for users who prefer to work directly in SQL. Run them in order:
 
-Oracle Graph has comprehensive support for the W3C standard, including RDF, RDFS, OWL, and the query language SPARQL.
+01_create_graph.sql         -- CREATE PROPERTY GRAPH statement
+02_queries.sql              -- Pattern matching queries (SQL:2023 syntax)
+03_algorithms.sql           -- PageRank, community detection via DBMS_GRAPH
+
+## What's in this folder
+
+- bank-graph-26ai.ipynb / .dsnb — main guided notebook
+- data/ — CSV files for accounts and transactions
+- sql/ — standalone SQL scripts
+- .env.example — connection string template
+
+## Next steps
+
+- Explore AI + graph demos → ../26ai-graph-demos/
+- Browse all built-in algorithms → ../built-in-algorithms/
+- Build a visualization UI → ../graphviz-demo/

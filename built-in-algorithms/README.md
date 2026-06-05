@@ -1,6 +1,47 @@
-# Built-In Algorithms
+# Oracle Graph Built-In Algorithms
 
-PGX includes a wide selection of optimized graph algorithms that can be invoked through the [Analyst](https://docs.oracle.com/en/database/oracle/property-graph/24.4/spgjv/oracle/pgx/api/Analyst.html). The following list provides the links to the detail pages of the available algorithms, grouped by category.
+Oracle Graph (PGX) ships with 80+ production-grade graph algorithms that run in parallel directly in Oracle AI Database. No custom code needed — invoke them through the PGX Analyst API, from Python, Java, or SQL, on graphs of any size.
+
+ℹ️  Oracle Graph is a native feature of Oracle AI Database 26ai (and 19c+). If you already run Oracle AI Database, you already have it — no extra install or license needed.
+
+## Algorithm categories
+
+| Category | What it covers |
+| ----------- | ----------- |
+| Ranking & Walking | PageRank, Personalized PageRank, HITS, Eigenvector Centrality, Article Rank, SALSA |
+| Centrality | Betweenness, Closeness, Harmonic, In/Out-Degree, Vertex Betweenness |
+| Community Detection | Louvain, Label Propagation, Infomap, Speaker-Listener (SLPA), Conductance Minimization |
+| Path Finding | Dijkstra (classic, filtered, bidirectional), Bellman-Ford, Hop Distance, Fattest Path |
+| Connected Components | Strongly Connected (Kosaraju, Tarjan), Weakly Connected |
+| Structure Evaluation | Triangle Counting, Local Clustering Coefficient, K-Core, Modularity, Bipartite Check |
+| Link Prediction | WTF (Whom To Follow), Adamic-Adar Index |
+| Matrix Factorization | Gradient Descent Matrix Factorization (for recommendations) |
+| Classic | Prim's Minimum Spanning Tree, BFS, DFS, Topological Sort |
+
+## Quick example — PageRank in Python
+
+```python
+import opg4py.graph as graph
+
+session = graph.GraphServer.session('https://your-server:7007', 'user', 'pass')
+pg = session.read_graph_by_name('bank_graph', 'pg_view')
+
+# Run PageRank
+analyst = session.create_analyst()
+pr = analyst.pagerank(pg)
+
+# Print top 5 accounts by influence
+pg.get_vertices().sort_by('pagerank', ascending=False).limit(5).print()
+```
+
+## Quick example — Louvain community detection
+
+```python
+communities = analyst.louvain(pg)
+print(f'Detected {communities.partition_count()} communities')
+```
+
+For the full parameter reference and return types for every algorithm, follow the links in the table of contents below.
 
 - Classic graph algorithms
   - [Prim's Algorithm](./md/pgx_builtin_a1_prim.md)

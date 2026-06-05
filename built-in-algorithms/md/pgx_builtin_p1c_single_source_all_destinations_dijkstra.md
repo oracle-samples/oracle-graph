@@ -5,8 +5,8 @@
 - **Time Complexity:** O(E + V log V) with V = number of vertices, E = number of edges
 - **Space Requirement:** O(4 * V) with V = number of vertices
 - **Javadoc:**
-  - [Analyst#singleSourceMultiDestination(PgxGraph graph, PgxVertex src, EdgeProperty cost)](https://docs.oracle.com/en/database/oracle/property-graph/25.1/spgjv/oracle/pgx/api/Analyst.html#shortestPathMultiDestinationDijkstra_oracle_pgx_api_PgxGraph_oracle_pgx_api_PgxVertex_oracle_pgx_api_EdgeProperty_)
-  - [Analyst#singleSourceMultiDestination(PgxGraph graph, PgxVertex src, EdgeProperty cost, VertexProperty distance, VertexProperty> parent, VertexProperty parentEdge)](https://docs.oracle.com/en/database/oracle/property-graph/25.1/spgjv/oracle/pgx/api/Analyst.html#shortestPathMultiDestinationDijkstra_oracle_pgx_api_PgxGraph_oracle_pgx_api_PgxVertex_oracle_pgx_api_EdgeProperty_oracle_pgx_api_VertexProperty_oracle_pgx_api_VertexProperty_oracle_pgx_api_VertexProperty_)
+  - [Analyst#singleSourceMultiDestination(PgxGraph graph, PgxVertex src, EdgeProperty cost)](https://docs.oracle.com/en/database/oracle/property-graph/26.2/spgjv/oracle/pgx/api/Analyst.html#shortestPathMultiDestinationDijkstra_oracle_pgx_api_PgxGraph_oracle_pgx_api_PgxVertex_oracle_pgx_api_EdgeProperty_)
+  - [Analyst#singleSourceMultiDestination(PgxGraph graph, PgxVertex src, EdgeProperty cost, VertexProperty distance, VertexProperty> parent, VertexProperty parentEdge)](https://docs.oracle.com/en/database/oracle/property-graph/26.2/spgjv/oracle/pgx/api/Analyst.html#shortestPathMultiDestinationDijkstra_oracle_pgx_api_PgxGraph_oracle_pgx_api_PgxVertex_oracle_pgx_api_EdgeProperty_oracle_pgx_api_VertexProperty_oracle_pgx_api_VertexProperty_oracle_pgx_api_VertexProperty_)
 
 This variant of the Dijkstra's algorithm tries to find the shortest path ignoring edges directions for directed graphs while also taking into account a filter expression, which will add restrictions over the potential edges when looking for the shortest path between the source and destination vertices.
 
@@ -28,7 +28,7 @@ This variant of the Dijkstra's algorithm tries to find the shortest path ignorin
 
 ```java
 /*
- * Copyright (C) 2013 - 2025 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (C) 2013 - 2026 Oracle and/or its affiliates. All rights reserved.
  */
 package oracle.pgx.algorithms;
 

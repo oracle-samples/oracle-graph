@@ -5,8 +5,8 @@
 - **Time Complexity:** O(V * E * d) with E = number of edges, V = number of vertices, d = diameter of the graph
 - **Space Requirement:** O(5 * V) with V = number of vertices
 - **Javadoc:**
-  - [Analyst#closenessCentralityDoubleLength(PgxGraph graph, EdgeProperty<java.lang.Double> cost)](https://docs.oracle.com/en/database/oracle/property-graph/25.1/spgjv/oracle/pgx/api/Analyst.html#closenessCentralityDoubleLength_oracle_pgx_api_PgxGraph_oracle_pgx_api_EdgeProperty_)
-  - [Analyst#closenessCentralityDoubleLength(PgxGraph graph, EdgeProperty<java.lang.Double> cost, VertexProperty<ID,java.lang.Double> cc)](https://docs.oracle.com/en/database/oracle/property-graph/25.1/spgjv/oracle/pgx/api/Analyst.html#closenessCentralityDoubleLength_oracle_pgx_api_PgxGraph_oracle_pgx_api_EdgeProperty_oracle_pgx_api_VertexProperty_)
+  - [Analyst#closenessCentralityDoubleLength(PgxGraph graph, EdgeProperty<java.lang.Double> cost)](https://docs.oracle.com/en/database/oracle/property-graph/26.2/spgjv/oracle/pgx/api/Analyst.html#closenessCentralityDoubleLength_oracle_pgx_api_PgxGraph_oracle_pgx_api_EdgeProperty_)
+  - [Analyst#closenessCentralityDoubleLength(PgxGraph graph, EdgeProperty<java.lang.Double> cost, VertexProperty<ID,java.lang.Double> cc)](https://docs.oracle.com/en/database/oracle/property-graph/26.2/spgjv/oracle/pgx/api/Analyst.html#closenessCentralityDoubleLength_oracle_pgx_api_PgxGraph_oracle_pgx_api_EdgeProperty_oracle_pgx_api_VertexProperty_)
 
 This variant of Closeness Centrality takes into account the weights from the edges when computing the reciprocal of the sum of all the distances from the possible shortest paths starting from the vertex V, for every vertex in the graph. The weights of the edges must be positive values greater than 0.
 
@@ -29,7 +29,7 @@ This variant of Closeness Centrality takes into account the weights from the edg
 
 ```java
 /*
- * Copyright (C) 2013 - 2025 Oracle and/or its affiliates. All rights reserved.
+ * Copyright (C) 2013 - 2026 Oracle and/or its affiliates. All rights reserved.
  */
 package oracle.pgx.algorithms;
 

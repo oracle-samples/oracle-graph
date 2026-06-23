@@ -1,0 +1,5 @@
+jupyterlab
+oracledb
+oracle-graph-client
+pandas
+matplotlib

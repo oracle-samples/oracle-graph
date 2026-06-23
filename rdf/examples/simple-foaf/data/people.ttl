@@ -1,0 +1,18 @@
+@prefix ex: <http://example.com/people/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+
+ex:alice a foaf:Person ;
+  foaf:name "Alice" ;
+  foaf:knows ex:bob, ex:carol ;
+  schema:knowsAbout "graphs", "databases" .
+
+ex:bob a foaf:Person ;
+  foaf:name "Bob" ;
+  foaf:knows ex:alice ;
+  schema:knowsAbout "SPARQL", "semantic web" .
+
+ex:carol a foaf:Person ;
+  foaf:name "Carol" ;
+  foaf:knows ex:alice ;
+  schema:knowsAbout "RDF", "knowledge graphs" .

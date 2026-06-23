@@ -1,0 +1,9 @@
+PREFIX ex: <http://example.com/people/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?friendName
+WHERE {
+  ex:alice foaf:knows ?friend .
+  ?friend foaf:name ?friendName .
+}
+ORDER BY ?friendName

@@ -1,0 +1,4 @@
+oracledb
+jupyterlab
+langchain-core
+langchain-openai

@@ -65,7 +65,6 @@ made, which fetches the neighbors of that node via another SQL query.
 | Oracle AI Database | 26ai |
 | Node.js | 18+ |
 
-
 ## Typical Workflow
 
 1. Start Oracle Graph Server.
@@ -74,8 +73,13 @@ made, which fetches the neighbors of that node via another SQL query.
 4. Run a PGQL or SQL graph query.
 5. Explore, filter, style, and export the rendered graph.
 
+## Graph Visualization Developer's Guide
+
+Find more information in the [Property Graph visualization documentation](https://docs.oracle.com/en/database/oracle/property-graph/26.2/pgvtr/index.html)
+
 ## Troubleshooting
 
-If you get any errors, 
+If you get any errors,
+
 * check the log output from the server on the terminal where the Gradle command is running
 * use browser debug tools (e.g. Chrome Developer Tools) to inspect request/response and console logs

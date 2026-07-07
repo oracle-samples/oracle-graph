@@ -7,6 +7,7 @@ This directory contains resources that are shared across multiple examples, tool
 | Folder | What It Holds |
 | --- | --- |
 | [`datasets/`](datasets/) | Reusable sample datasets. |
+| [`demos/`](demos/) | Cross-domain demos that combine multiple Oracle Graph areas, such as property graph and RDF Graph. |
 | [`utilities/`](utilities/) | Placeholder for reusable helper scripts and tools shared by multiple examples. |
 
 
@@ -14,7 +15,7 @@ This directory contains resources that are shared across multiple examples, tool
 
 Resources in this directory should:
 
-* Be reusable across multiple projects or workflows.
+* Be reusable across multiple projects or workflows, or intentionally span multiple Oracle Graph areas.
 * Avoid dependencies on a specific tool or notebook.
 * Serve as common assets that reduce duplication elsewhere in the repository.
 

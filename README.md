@@ -16,7 +16,7 @@ Choose the path that matches what you want to do:
 | Try property graph demos for 26ai | [`property-graph/26ai/demos/`](property-graph/26ai/demos/) | 26ai SQL property graph demos |
 | Try knowledge graph or GraphRAG demos | [`knowledge-graph/demo/`](knowledge-graph/demo/) | AI and knowledge graph examples |
 | Browse graph algorithm examples | [`property-graph/algorithms/`](property-graph/algorithms/) | PageRank, shortest path, centrality, community detection, and related samples |
-| Reuse datasets or helper utilities | [`shared/`](shared/) | Files used by more than one demo or database version |
+| Reuse shared resources or cross-domain demos | [`shared/`](shared/) | Files and examples used across multiple Oracle Graph areas |
 
 If you are new to Oracle Graph, start with [`property-graph/26ai/get-started/`](property-graph/26ai/get-started/). Use the 19c path only when you are specifically working with Oracle Database 19c.
 
@@ -47,7 +47,7 @@ If you are new to Oracle Graph, start with [`property-graph/26ai/get-started/`](
 | [`property-graph/`](property-graph/) | Property graph examples, organized by database version plus algorithm samples. |
 | [`knowledge-graph/`](knowledge-graph/) | Knowledge graph and GraphRAG examples. |
 | [`rdf/`](rdf/) | RDF graph examples and assets. |
-| [`shared/`](shared/) | Reusable datasets, utilities, and assets shared across examples. |
+| [`shared/`](shared/) | Reusable datasets, utilities, assets, and cross-domain demos shared across Oracle Graph areas. |
 
 ## Common Use Cases
 
@@ -58,7 +58,7 @@ If you are new to Oracle Graph, start with [`property-graph/26ai/get-started/`](
 | Try 26ai property graph demos | [`property-graph/26ai/demos/`](property-graph/26ai/demos/) |
 | Try GraphRAG or knowledge graph demos | [`knowledge-graph/demo/`](knowledge-graph/demo/) |
 | Browse graph algorithms | [`property-graph/algorithms/`](property-graph/algorithms/) |
-| Find reusable datasets or helper scripts | [`shared/`](shared/) |
+| Find reusable datasets, helper scripts, or cross-domain demos | [`shared/`](shared/) |
 | Check property graph version compatibility | [`property-graph/docs/compatibility.md`](property-graph/docs/compatibility.md) |
 
 ## Folder Guide
@@ -85,7 +85,7 @@ Use this folder for RDF graph examples and related assets.
 
 ### [`shared/`](shared/)
 
-Use this folder only for files reused by more than one example, such as datasets, helper scripts, or common assets. If a file belongs to one demo only, keep it inside that demo folder.
+Use this folder for reusable resources and demos that intentionally span multiple Oracle Graph areas, such as examples that combine property graph and RDF Graph. If a file belongs to one single-area demo only, keep it inside that demo folder.
 
 ### [`property-graph/docs/`](property-graph/docs/)
 
@@ -128,7 +128,7 @@ Contributions are welcome. Before opening a pull request, please:
 - Keep examples self-contained and reproducible.
 - Include setup notes for any database, Python, or notebook dependencies.
 - Place version-specific property graph examples under `property-graph/26ai/` or `property-graph/19c/`.
-- Place reusable datasets, utilities, and assets under `shared/` only when they are used by more than one example.
+- Place reusable datasets, utilities, assets, and cross-domain demos under `shared/` when they span more than one Oracle Graph area.
 - Add expected output or screenshots when the result is visual.
 - Avoid committing credentials, connection strings, wallets, or generated data that should not be shared.
 

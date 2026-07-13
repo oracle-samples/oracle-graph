@@ -1,5 +1,5 @@
 jupyterlab
 oracledb
-oracle-graph-client
+oraclegraph
 pandas
 matplotlib

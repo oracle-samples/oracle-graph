@@ -12,10 +12,10 @@ The key source files to look at are
 
 ## Features
 
-- Force-directed and hierarchical layout options.
-- PGQL and SQL:2023 query input with live graph rendering.
-- Click-to-expand node exploration for fetching neighbors on demand.
-- Node and edge styling by label, property value, or algorithm result such as PageRank score.
+* Force-directed and hierarchical layout options.
+* SQL:2023 and PGQL query input with live graph rendering.
+* Click-to-expand node exploration for fetching neighbors on demand.
+* Node and edge styling by label, property value, or algorithm result such as PageRank score.
 
 ## Pre-requisites
 
@@ -28,7 +28,7 @@ The key source files to look at are
 
 ## Quick Start
 
-1. Clone this repository 
+1. Clone this repository
 2. Download the "Oracle Graph Visualization library" [from oracle.com](https://www.oracle.com/database/graph/downloads.html)
 3. Unzip the library into the `src/main/resources/public` directory. For example:
 
@@ -44,16 +44,16 @@ unzip oracle-graph-visualization-library-25.4.0.zip -d src/main/resources/public
 
 with
 
-* `<jdbc-url>` being the JDBC URL of the Oracle Database should connect to, e.g. `jdbc:oracle:thin:@myhost:1521/orcl` 
+* `<jdbc-url>` being the JDBC URL of the Oracle Database should connect to, e.g. `jdbc:oracle:thin:@myhost:1521/orcl`
 * `<username>` being the Oracle Database username to authenticate the example application, e.g. `scott`
 * `<password>` being the Oracle Database password to authenticate the example application, e.g. `tiger`
 
 Then open your browser at `http://localhost:8080`.
 
-When you click on the <em>Query</em> button, a request is made to `/hr/directs`, which fetches the direct reports of 
-the given employee (by default `SKING`) from the HR graph using a SQL query. 
+When you click on the *Query* button, a request is made to `/hr/directs`, which fetches the direct reports of
+the given employee (by default `SKING`) from the HR graph using a SQL query.
 
-When you right-click on one of the resulting nodes and then select <em>Expand</em>, a request to `/hr/neighbors` is being 
+When you right-click on one of the resulting nodes and then select *Expand*, a request to `/hr/neighbors` is being
 made, which fetches the neighbors of that node via another SQL query.
 
 ## Version Compatibility
@@ -70,7 +70,7 @@ made, which fetches the neighbors of that node via another SQL query.
 1. Start Oracle Graph Server.
 2. Create or load a property graph in Oracle AI Database.
 3. Configure this app with the graph server URL and graph name.
-4. Run a PGQL or SQL graph query.
+4. Run a SQL or PGQL graph query.
 5. Explore, filter, style, and export the rendered graph.
 
 ## Graph Visualization Developer's Guide

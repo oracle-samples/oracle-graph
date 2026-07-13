@@ -47,5 +47,5 @@ If you are using Oracle Database 19c, use [`../19c/`](../19c/) instead.
 
 ## Documentation
 
-- [Oracle Property Graph Release 26.1](https://docs.oracle.com/en/database/oracle/property-graph/26.1/index.html)
+- [Oracle Property Graph Release 26.2](https://docs.oracle.com/en/database/oracle/property-graph/26.2/index.html)
 - [Oracle AI Database 26ai](https://docs.oracle.com/en/database/oracle/oracle-database/26/index.html)

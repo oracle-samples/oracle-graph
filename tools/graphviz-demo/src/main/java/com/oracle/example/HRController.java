@@ -13,6 +13,7 @@ import io.micronaut.http.annotation.Produces;
 import io.micronaut.http.annotation.QueryValue;
 import io.micronaut.http.hateoas.JsonError;
 import io.micronaut.http.hateoas.Link;
+import io.micronaut.http.server.exceptions.NotFoundException;
 import io.micronaut.web.router.exceptions.UnsatisfiedQueryValueRouteException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -54,8 +55,12 @@ public class HRController {
 
   @Error(global = true)
   public HttpResponse<JsonError> error(HttpRequest request, Throwable e) {
-    log.error("processing exception {}", e.getMessage(), e);
     JsonError error = new JsonError(e.getMessage()).link(Link.SELF, Link.of(request.getUri()));
+    if (e instanceof NotFoundException) {
+      log.warn("Resource not found: {} {}", request.getMethod(), request.getUri());
+      return HttpResponse.<JsonError>notFound().body(error);
+    }
+    log.error("processing exception for {} {}: {}", request.getMethod(), request.getUri(), e.getMessage(), e);
     if (e.getClass() == IllegalArgumentException.class || e.getClass() == UnsatisfiedQueryValueRouteException.class) {
       return HttpResponse.<JsonError>badRequest().body(error);
     }

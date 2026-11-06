@@ -1,7 +1,7 @@
 plugins {
-    id("io.micronaut.application") version "4.5.4"
-    id("com.gradleup.shadow") version "8.3.7"
-    id("io.micronaut.aot") version "4.5.4"
+    id("io.micronaut.application") version "5.0.2"
+    id("com.gradleup.shadow") version "9.6.1"
+    id("io.micronaut.aot") version "5.0.2"
 }
 
 version = "0.1"
@@ -31,24 +31,26 @@ dependencies {
   compileOnly("io.micronaut:micronaut-http-client")
   runtimeOnly("ch.qos.logback:logback-classic")
   runtimeOnly("org.yaml:snakeyaml")
-  runtimeOnly("org.fusesource.jansi:jansi:2.4.1")
+  runtimeOnly("org.fusesource.jansi:jansi:2.4.3")
   testImplementation("io.micronaut:micronaut-http-client")
 
-  implementation("com.oracle.database.graph:opg-client:25.2.0")
-  implementation("commons-io:commons-io:2.11.0")
+  implementation("com.oracle.database.graph:opg-client:26.4.0")
+  implementation("commons-io:commons-io:2.22.0")
 }
 
 application {
   mainClass.set("com.oracle.example.Application")
 }
 java {
-  sourceCompatibility = JavaVersion.toVersion("17")
-  targetCompatibility = JavaVersion.toVersion("17")
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(25)
+  }
 }
 
 graalvmNative.toolchainDetection = false
 
 micronaut {
+  coreVersion.set("5.2.21")
   runtime("netty")
   testRuntime("junit5")
   processing {

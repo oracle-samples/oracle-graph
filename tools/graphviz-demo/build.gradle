@@ -20,22 +20,16 @@ repositories {
       ignoreGradleMetadataRedirection()
     }
   }
-  maven { url "https://artifacts.metaborg.org/content/repositories/releases" }
-  maven { url "https://artifacts.metaborg.org/content/repositories/usethesource/" }
 }
 
 dependencies {
-  annotationProcessor("io.micronaut:micronaut-http-validation")
-  annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
   implementation("io.micronaut.serde:micronaut-serde-jackson")
-  compileOnly("io.micronaut:micronaut-http-client")
   runtimeOnly("ch.qos.logback:logback-classic")
-  runtimeOnly("org.yaml:snakeyaml")
-  runtimeOnly("org.fusesource.jansi:jansi:2.4.3")
+  runtimeOnly("com.oracle.database.jdbc:ojdbc17:23.26.3.0.0")
+  // Required for Oracle wallet connections.
+  runtimeOnly("com.oracle.database.security:oraclepki:23.26.2.0.0")
+  
   testImplementation("io.micronaut:micronaut-http-client")
-
-  implementation("com.oracle.database.graph:opg-client:26.4.0")
-  implementation("commons-io:commons-io:2.22.0")
 }
 
 application {

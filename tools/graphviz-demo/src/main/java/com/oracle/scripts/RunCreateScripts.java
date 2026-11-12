@@ -1,6 +1,5 @@
 package com.oracle.scripts;
 
-import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -72,7 +71,10 @@ public class RunCreateScripts {
   }
 
   private static void executeSqlScripts(Connection conn, String sqlFile) throws Exception {
-    String script = IOUtils.toString(RunCreateScripts.class.getResourceAsStream(sqlFile), StandardCharsets.UTF_8);
+    String script;
+    try (InputStream input = RunCreateScripts.class.getResourceAsStream(sqlFile)) {
+      script = new String(input.readAllBytes(), StandardCharsets.UTF_8);
+    }
     LOG.info("Executing statements {}", script);
     try {
       conn.createStatement().execute(script);

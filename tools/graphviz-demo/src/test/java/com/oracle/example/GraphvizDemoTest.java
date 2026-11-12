@@ -1,5 +1,8 @@
 package com.oracle.example;
 
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 import io.micronaut.runtime.EmbeddedApplication;
 import io.micronaut.context.annotation.Property;
 import io.micronaut.http.HttpStatus;
@@ -42,6 +45,14 @@ class GraphvizDemoTest {
                 HttpClientResponseException.class,
                 () -> client.toBlocking().retrieve("/missing-resource.js"));
         Assertions.assertEquals(HttpStatus.NOT_FOUND, exception.getStatus());
+        String body = exception.getResponse().getBody(String.class).orElseThrow();
+        Assertions.assertTrue(body.contains("Page Not Found"));
+        Assertions.assertTrue(body.contains("/missing-resource.js"));
+    }
+
+    @Test
+    void oracleJdbcDriverIsAvailable() throws SQLException {
+        Assertions.assertNotNull(DriverManager.getDriver("jdbc:oracle:thin:@localhost:1521/test"));
     }
 
 }

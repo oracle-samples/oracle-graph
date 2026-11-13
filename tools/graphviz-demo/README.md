@@ -19,7 +19,7 @@ The key source files to look at are
 
 ## Pre-requisites
 
-1. Oracle JDK 17 (or OpenJDK 17)
+1. Oracle JDK 25 (or OpenJDK 25)
 2. A running Oracle AI Database 26ai or newer (e.g. [Oracle Autonomous AI Database](https://www.oracle.com/autonomous-database/))
 3. Import the Human Resources dataset and create a Property Graph by running `./gradlew createHrDatasetAndPropertyGraph -Pjdbc_url=<jdbc_url> -Pusername=<username> -Ppassword=<password>`
 
@@ -33,7 +33,7 @@ The key source files to look at are
 3. Unzip the library into the `src/main/resources/public` directory. For example:
 
 ```
-unzip oracle-graph-visualization-library-25.4.0.zip -d src/main/resources/public/
+unzip oracle-graph-visualization-library-26.4.0.zip -d src/main/resources/public/
 ```
 
 4. Run the following command to start the example app locally:
@@ -56,14 +56,6 @@ the given employee (by default `SKING`) from the HR graph using a SQL query.
 When you right-click on one of the resulting nodes and then select *Expand*, a request to `/hr/neighbors` is being
 made, which fetches the neighbors of that node via another SQL query.
 
-## Version Compatibility
-
-| Component | Supported Version |
-| --- | --- |
-| Oracle Graph Visualization Library (GVT) | 25.4+ |
-| Oracle Graph Server | 26.x+ |
-| Oracle AI Database | 26ai |
-| Node.js | 18+ |
 
 ## Typical Workflow
 
@@ -75,7 +67,7 @@ made, which fetches the neighbors of that node via another SQL query.
 
 ## Graph Visualization Developer's Guide
 
-Find more information in the [Property Graph visualization documentation](https://docs.oracle.com/en/database/oracle/property-graph/26.2/pgvtr/index.html)
+Find more information in the [Property Graph visualization documentation](https://docs.oracle.com/en/database/oracle/property-graph/26.4/pgvtr/index.html)
 
 ## Troubleshooting
 

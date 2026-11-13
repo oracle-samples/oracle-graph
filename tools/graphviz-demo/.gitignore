@@ -13,6 +13,8 @@ build/
 target/
 out/
 .micronaut/
+.vscode/
+bin/
 .idea
 *.iml
 *.ipr

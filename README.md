@@ -7,6 +7,8 @@ Property graphs, RDF graphs, Knowledge graphs, AI-ready analytics, and 80+ built
 
 ## Start Here
 
+For a guided sequence from graph fundamentals to hands-on examples, see the [Oracle Graph Learning Path](LEARNING_PATH.md).
+
 Choose the path that matches what you want to do:
 
 | I want to... | Go to | Best for |

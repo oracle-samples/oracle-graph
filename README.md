@@ -7,18 +7,21 @@ Property graphs, RDF graphs, Knowledge graphs, AI-ready analytics, and 80+ built
 
 ## Start Here
 
-Choose the path that matches what you want to do:
+New to Oracle Graph? Follow the [Oracle Graph Learning Path](LEARNING_PATH.md) for a guided sequence from graph fundamentals to hands-on examples. If you already know graph concepts, jump straight to [`property-graph/26ai/get-started/`](property-graph/26ai/get-started/). Use the 19c path only when you are specifically working with Oracle Database 19c.
+
+Or choose the path that matches what you want to do:
 
 | I want to... | Go to | Best for |
 | --- | --- | --- |
 | Start with the current property graph experience | [`property-graph/26ai/get-started/`](property-graph/26ai/get-started/) | New users and anyone using Oracle AI Database 26ai |
 | Use property graphs with Oracle Database 19c | [`property-graph/19c/get-started/`](property-graph/19c/get-started/) | Existing 19c users and PGQL-based workflows |
 | Try property graph demos for 26ai | [`property-graph/26ai/demos/`](property-graph/26ai/demos/) | 26ai SQL property graph demos |
+| Visualize SQL graph query results in VS Code | [Oracle SQL Developer Graph Visualization for VS Code](https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer-graph-visualization) | Developers working in VS Code with Oracle AI Database 26ai |
+| Explore RDF graphs and ontologies | [`rdf/examples/`](rdf/examples/) | SPARQL, RDFS, and OWL examples |
 | Try knowledge graph or GraphRAG demos | [`knowledge-graph/demo/`](knowledge-graph/demo/) | AI and knowledge graph examples |
 | Browse graph algorithm examples | [`property-graph/algorithms/`](property-graph/algorithms/) | PageRank, shortest path, centrality, community detection, and related samples |
 | Reuse shared resources or cross-domain demos | [`shared/`](shared/) | Files and examples used across multiple Oracle Graph areas |
-
-If you are new to Oracle Graph, start with [`property-graph/26ai/get-started/`](property-graph/26ai/get-started/). Use the 19c path only when you are specifically working with Oracle Database 19c.
+| Check version compatibility or migrate from 19c to 26ai | [`property-graph/docs/`](property-graph/docs/) | Compatibility notes and migration guidance |
 
 ## What Oracle Graph Gives You
 
@@ -27,6 +30,7 @@ If you are new to Oracle Graph, start with [`property-graph/26ai/get-started/`](
 - Query and traverse graphs using SQL with SQL:2023 property graph syntax (or PGQL for databases 19c and prior).
 - Run 80+ built-in algorithms, including PageRank, Louvain, Dijkstra, betweenness centrality, and more.
 - Use Graph Studio, a browser-based IDE for building, querying, and visualizing graphs.
+- Visualize SQL graph query results directly in VS Code with the [Oracle SQL Developer Graph Visualization extension](https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer-graph-visualization).
 
 ### RDF Graph
 
@@ -48,18 +52,8 @@ If you are new to Oracle Graph, start with [`property-graph/26ai/get-started/`](
 | [`knowledge-graph/`](knowledge-graph/) | Knowledge graph and GraphRAG examples. |
 | [`rdf/`](rdf/) | RDF graph examples and assets. |
 | [`shared/`](shared/) | Reusable datasets, utilities, assets, and cross-domain demos shared across Oracle Graph areas. |
-
-## Common Use Cases
-
-| Use Case | Where To Look |
-| --- | --- |
-| Build a first property graph in 26ai | [`property-graph/26ai/get-started/`](property-graph/26ai/get-started/) |
-| Build a first property graph in 19c | [`property-graph/19c/get-started/`](property-graph/19c/get-started/) |
-| Try 26ai property graph demos | [`property-graph/26ai/demos/`](property-graph/26ai/demos/) |
-| Try GraphRAG or knowledge graph demos | [`knowledge-graph/demo/`](knowledge-graph/demo/) |
-| Browse graph algorithms | [`property-graph/algorithms/`](property-graph/algorithms/) |
-| Find reusable datasets, helper scripts, or cross-domain demos | [`shared/`](shared/) |
-| Check property graph version compatibility | [`property-graph/docs/compatibility.md`](property-graph/docs/compatibility.md) |
+| [`tools/`](tools/) | Development environments, notebooks, and visualization demos for working with Oracle Graph. |
+| [`LEARNING_PATH.md`](LEARNING_PATH.md) | A guided learning sequence through the content in this repository. |
 
 ## Folder Guide
 
@@ -87,6 +81,10 @@ Use this folder for RDF graph examples and related assets.
 
 Use this folder for reusable resources and demos that intentionally span multiple Oracle Graph areas, such as examples that combine property graph and RDF Graph. If a file belongs to one single-area demo only, keep it inside that demo folder.
 
+### [`tools/`](tools/)
+
+Use this folder for tool-specific and environment-specific content, such as Jupyter notebooks, Graph Studio interpreter setup, and visualization demos. For visualizing graphs in VS Code, see the [Oracle SQL Developer Graph Visualization extension](https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer-graph-visualization).
+
 ### [`property-graph/docs/`](property-graph/docs/)
 
 Use this folder for repository-level guidance, including compatibility notes and migration guidance between Oracle Database 19c and Oracle AI Database 26ai.
@@ -100,6 +98,7 @@ The examples in this repository may require:
 - SQLcl, SQL Developer, Graph Studio, or another supported SQL client.
 - Python and Jupyter for notebook-based walkthroughs.
 - Optional: Conda for custom Graph Studio Python interpreter setup.
+- Optional: VS Code with the [Oracle SQL Developer Graph Visualization extension](https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer-graph-visualization) to visualize SQL graph query results (requires Oracle AI Database 26ai; SQL Developer for VS Code is installed automatically as a dependency).
 
 Check the README inside each folder for version-specific setup steps and dependencies.
 
@@ -108,6 +107,7 @@ Check the README inside each folder for version-specific setup steps and depende
 - Oracle Property Graph documentation: [Oracle Property Graph Release 26.1](https://docs.oracle.com/en/database/oracle/property-graph/26.1/index.html)
 - Oracle AI Database 26ai documentation: [Oracle AI Database 26ai](https://docs.oracle.com/en/database/oracle/oracle-database/26/index.html)
 - Oracle Database 19c documentation: [Oracle Database 19c](https://docs.oracle.com/en/database/oracle/oracle-database/19/index.html)
+- Graph Visualization extension for VS Code: [Getting Started with the Graph Visualization Extension for VS Code](https://docs.oracle.com/en/database/oracle/property-graph/26.1/spgdg/getting-started-vs-code-graph-visualization-extension.html)
 - Repository compatibility notes: [`property-graph/docs/compatibility.md`](property-graph/docs/compatibility.md)
 - 19c to 26ai migration guidance: [`property-graph/docs/migration-19c-to-26ai.md`](property-graph/docs/migration-19c-to-26ai.md)
 

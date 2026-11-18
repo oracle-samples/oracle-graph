@@ -10,6 +10,12 @@ This directory contains supporting tools, development environments, demos, and i
 | [`graphviz-demo/`](graphviz-demo/) | Graph visualization demo application. |
 | [`jupyter-notebooks/`](jupyter-notebooks/) | Standalone Jupyter notebooks and notebook examples. |
 
+## Related Oracle Tools
+
+| Tool | What It Does |
+| --- | --- |
+| [Oracle SQL Developer Graph Visualization for VS Code](https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer-graph-visualization) | VS Code extension that visualizes SQL graph query results from Oracle AI Database 26ai. See the [getting started guide](https://docs.oracle.com/en/database/oracle/property-graph/26.1/spgdg/getting-started-vs-code-graph-visualization-extension.html). |
+
 ## Purpose
 
 Items in this directory are intended to help users:
